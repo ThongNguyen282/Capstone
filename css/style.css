@@ -252,13 +252,17 @@ nav ul li a:before {
     background-color: black;
     color: white;
 }
+
+.dark .stats-info{
+    border: 1px solid #333;
+}
 /* carousel */
 
 
 
 .content {
 
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 253, 253, 0.33)) , url(../img/banner.jpg);
+    background: linear-gradient(to right, rgba(211, 198, 198, 0.7), rgba(255, 253, 253, 0.33)) , url(../img/banner.jpg);
 
     position: relative;
     overflow: hidden;
@@ -418,7 +422,13 @@ img.img-curve {
     padding: 1rem;
     border-radius: 10px;
     transition: 0.3s ease;
-    border: 1px solid;
+    border: 1px solid #f8f9fa;
+    box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+  
+}
+
+.stats .stats-info:hover{
+    transform: translateY(-3%);
 }
 
 .stats .stats-info h2{
