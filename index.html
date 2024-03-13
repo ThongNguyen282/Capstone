@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="myBody">
+
+    <header id="site-header" class="main-header fix-top ">
+        <div class="container headerLogo">
+            <div class="d-flex justify-content-around">
+                <nav class="navbar navbar-expand-lg stroke px-0 pt-lg-0">
+                    <h1>
+                        <a class="navbar-brand" href="#">
+                            <i class="fa-solid fa-handshake"></i>
+                            <span>Masterwork</span>
+                        </a>
+                    </h1>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Page
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Blog Posts</a>
+                                    <a class="dropdown-item" href="#">Landing page</a>
+                                    <a class="dropdown-item" href="#">404 page</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Contact</a>
+                            </li>
+                        </ul>
+
+                        <!-- search right -->
+                        <div class="search-right headerSearch mr-lg-3">
+                            <a href="#search" class="search-search" title="search">
+                                <span>
+                                    <i class=" fa fa-solid fa-magnifying-glass"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <!-- search popup -->
+                        <div id="search" class="pop-overlay">
+                            <div class="popup">
+                                <form action="#" method="GET" class="search-box d-sm-flex">
+                                    <input type="search" placeholder="Enter Keywork" name="s" required="required"
+                                        autofocus>
+                                    <button type="submit" class="btn">Search</button>
+                                </form>
+                                <a href="#close" class="close"></a>
+                            </div>
+
+                        </div>
+                        <div class="top quote mr-lg-3 mt-lg-0 headerButton">
+                            <a href="#" class="btn btn-outline-primary theme-button1">Schedule a Demo</a>
+                        </div>
+                        <div class="mobile-position DarkandLight">
+                            <nav class="navigation">
+                                <button class="btn" id="switch-theme" title="click to switch theme">
+                                    <i class="fa-regular fa-sun"></i>
+                                    <i class="fa-regular fa-moon"></i>
+                                </button>
+                            </nav>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- carousel -->
+    <section class="carsousel">
+        <div class="content ">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 content-left">
+                        <h2>We Execute Our Ideas<br> From Start to Finish</h2>
+                        <p class="mt-3 mb-lg-5 mb-4">Building a beautiful interactive business for<br> startups and
+                            innovative companies.</p>
+                        <a href="#" class="btn btn-outline-primary theme-button">Get Started</a>
+                    </div>
+                    <div class="col-lg-6 content-photo mt-lg-0 mt-5">
+                        <div id="carouselExample" class="carousel" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/main.png" class="img-fluid" alt="main image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="Us py-5">
+        <div class="container py-md-5">
+            <div class="header text-center mx-auto">
+                <p class="title">WHY CHOOSE US</p>
+                <h2>Tools for business startup to<br> professional</h2>
+                <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    Nulla
+                    mollis<br> dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+            </div>
+            <div class="row text-center justify-content-center">
+                <div class="col-lg-4 col-md-5 mt-5">
+                    <div class="item1">
+                        <a href="#" class="in-item1">
+                            <img src="./img/s1.png" class="img-fluid">
+                            <h2 class="my-3">Interactive</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum
+                                perspiciatis?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 mt-5">
+                    <div class="item1">
+                        <a href="" class="in-item1">
+                            <img src="./img/s1.png" class="img-fluid">
+                            <h2 class="my-3">Business</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum
+                                perspiciatis?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 mt-5">
+                    <div class="item1">
+                        <a href="#" class="in-item1">
+                            <img src="./img/s1.png" class="img-fluid">
+                            <h2 class="my-3">Inspiration</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum
+                                perspiciatis?</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about py-5">
+        <div class="container py-lg-3 mt-3">
+            <div class="row align-items-center">
+                <div class="col-sm-6 info pr-md-5">
+                    <p class="title">ABOUT OUR COMPANY</p>
+                    <h2 class="mb-md-4 mb-3">The Best Choice For Your Successful Business!</h2>
+                    <p class="mb-md-5 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus
+                        illum harum quam nihil totam reprehenderit! Ut sed eveniet quos! Asperiores officia, repudiandae
+                        similique reiciendis, ab est magnam esse nesciunt ea fuga facere voluptatem.</p>
+                    <a href="#" class="btn btn-primary theme-button">Read more</a>
+                </div>
+                <div class="col-sm-6 pl-md-5 mt-sm-0 mt-5">
+                    <img src="./img/about.jpg" alt class="img-fluid shadow img-curve">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- stats -->
+    <section class="stats pb-5 pt-4">
+        <div class="container pb-lg-3">
+            <div class="row stats-item justify-content-center">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="stats-info counter-grid">
+                        <h2>Happy Customers</h2>
+                        <p class="counter">10458</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mt-sm-0 mt-4">
+                    <div class="stats-info counter-grid1">
+                        <h2>Winning Awards</h2>
+                        <p class="counter">890</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
+                    <div class="stats-info counter-grid2">
+                        <h2>Completed Projects</h2>
+                        <p class="counter">5345</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="mid">
+        <div class="cover ">
+            <div class="container">
+                <div class="mid1">
+                    <div class="mid2">
+                        <h2>We are true to ourselves, and commit to always perform at our best.</h2>
+                    </div>
+                    <div class="list">
+                        <p class="mt-md-4 mt-3 mb-md-5 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Necessitatibus, doloribus atque. Corrupti exercitationem voluptatem ipsum iste consequuntur
+                            et vitae voluptas temporibus? Maxime dolores amet voluptatum illo consequatur placeat fugit
+                            ducimus.</p>
+                        <a href="#" class="btn btn-light theme-button">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.counter').countUp();
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
