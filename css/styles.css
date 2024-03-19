@@ -76,18 +76,322 @@ header .search-right {
     display: inline-grid;
     grid-template-columns: auto 1fr;
 }
-head a.search-search span.fa {
-    color: var(--text-color);
+
+header .navbar-expand-lg .navbar-nav .nav-link {
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2C3038;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: var(--primary);
+    animation: anima 1s ;
+}
+
+header a.nav-link:before, a.dropdown-item:before {
+    position: absolute;
+    content: '';
+    background: var(--primary);
+    width: 0px;
+    height: 2px;
+    bottom: 13px;
+}
+
+header a.nav-link:hover::before, a.dropdown-item:hover::before {
+    width: 50px;
+}
+header a.search-search span.fa {
+    color: #2C3038;
     font-size: 15px;
     opacity: .7;
     width: 40px;
     height: 40px;
     line-height: 38px;
-    background: var(--light-bg-color);
+    background: #F7F9FC;
     text-align: center;
     border-radius: 50px;
-    border: 1px solid var(--border-color);
+    border: 1px solid #fff;
 }
+
+header .search-search span.fa:hover {
+    color: var(--title-color);
+    opacity: 1;
+}
+
+
+/* ! Search  */
+
+header .search-btn{
+    margin: 10px;
+    cursor: pointer;
+    border: 50px;
+}
+header .search-btn:hover{
+}
+
+.mySearch input {
+    font-size: 16px;
+    line-height: 25px;
+    /* color: #000; */
+    height: 55px;
+    padding: 15px 20px 12px;
+    width: 100%;
+    border: 1px solid #d6d6d6;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-right: none;
+    z-index: 9999;
+  }
+  .mySearch button {
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    color: #f5f9fc;
+    font-weight: 500;
+    border: none;
+    background: var(--primary);
+    padding: 14px 25px;
+    border-left: none;
+    border-radius: initial;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .mySearch {
+    position: relative;
+    margin: 0rem auto;
+    padding: 0;
+    width: 115%;
+    bottom: -250px;
+    left: -5%;
+  }
+  .modal-header {
+    border-bottom: none;
+    padding: 0;
+  }
+  .mySearch .close {
+    position: absolute;
+    right: 20px;
+    top: -50px;
+    transition: all 200ms;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+  }
+  .close {
+    float: right;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;
+  }
+  .btn-secondary {
+    background-color: unset;
+    border-color: unset;
+  }
+  .btn-secondary:hover {
+    background-color: unset;
+    border-color: unset;
+  }
+  .btn {
+    border: unset;
+  }
+  .nav-tabs {
+    border-bottom: unset;
+  }
+  .btn-primary:focus {
+    color: unset;
+    background-color: unset;
+    border-color: unset;
+    box-shadow: unset;
+  }
+  .btn-primary:not(:disabled):not(.disabled).active,
+  .btn-primary:not(:disabled):not(.disabled):active,
+  .show > .btn-primary.dropdown-toggle {
+    color: unset;
+    background-color: unset;
+    border-color: unset;
+  }
+
+  .modal-backdrop {
+ 
+    z-index: 100 !important;
+
+}
+
+header #switchButton{
+    display: inline-block;
+    cursor: pointer;
+    padding: 4px;
+    border: none;
+}
+
+header #switchButton:hover{
+    border-radius: 99px;
+    border: 1px solid;
+    
+}
+
+/*! Light theme  */
+#myBody {
+    background-color: white;
+  }
+
+  #switchButton .fa-moon {
+    display: none;
+  }
+  #switchButton .fa-sun {
+    display: block;
+  }
+  .fa-moon,
+  .fa-sun {
+    font-size: 30px;
+  }
+  
+  /*! Dark Theme*/
+  .dark#myBody {
+    background-color: #131617;
+    color: #b7b7b7;
+  }
+
+  .dark #switchButton .fa-moon {
+    display: block;
+    color: #404040;
+  }
+
+  .dark#myBody h3{
+    color: #eee;
+  }
+  
+  .dark #switchButton .fa-sun {
+    display: none;
+  }
+  .dark header {
+    background-color: black;
+    color: white;
+  }
+
+  .dark header a{
+    
+  }
+  .dark header .navbar-expand-lg .navbar-nav .nav-link {
+
+    color: white;
+}
+  
+.dark header .navbar-expand-lg .navbar-nav .nav-link:hover {
+
+    color: var(--primary);
+}
+
+
+
+  .dark .index1 .content{
+    background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.92)), url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/banner.jpg);
+  }
+
+
+  
+.dark .index2 .s-block {
+    border-radius:6px;
+    transition: 0.3s ease-in;
+    background: #191c1d;
+    padding: 3rem 2rem;
+    border: 1px solid #191c1d;
+}
+.dark .index2 .s-block:hover{
+    background-color: #131617;
+    border: 1px solid #333;
+}
+
+.dark .index2 .s-block p{
+    color: #b7b7b7;
+}
+
+.dark .index3{
+    background-color: #191c1d;
+}
+
+.dark .stats{
+    background-color: #191c1d;
+}
+.dark .stats .stats_info {
+    background-color: #131617;
+    padding: 2rem;
+
+    box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+    transition: 0.3s ease;
+    border: 1px solid #333;
+}
+.dark .stats .stats_info h4{
+    color: #eee;
+}
+
+.dark .faq {
+    background-color: #191c1d;
+}
+.dark .faq .accordion .card-header {
+    background-color: #131617;
+}
+.dark .faq .card-body{
+    background-color: #131617;
+}
+.dark .faq .accordion .card a {
+
+    color: #eee;
+}
+
+.dark .products .nav-link {
+
+    color: #eee;
+
+}
+.dark .products .nav-tabs .nav-link.active{
+    background-color:#131617;
+}
+
+
+.dark .testimonials{
+    background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.77)), url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b2.jpg);
+}
+
+.dark .testimonials .slider-info{
+    background-color: #131617;
+}
+.dark .testimonials .message p {
+    color: #f8f8f8;
+}
+.dark .testimonials .message span {
+    color: #eee;
+}
+
+.dark .footer{
+    background-color: #191c1d;
+}
+
+.dark .footer .end-column{
+background-color: #131617;
+}
+
+.dark .footer .end-column h4{
+    color: #eee;
+}
+
+.dark .footer .footer-16-main p a{
+    color: #eee;
+}
+
+.dark .footer ul.social li a{
+    color: #eee;
+}
+
+
+header .w3HeaderLogoEd button:hover{
+    background-color: var(--primary);
+}
+
+
 /* ? index 1 */
 
 .index1 .content {
@@ -791,7 +1095,6 @@ img.img-curve:hover {
    width: 22px;
    height: 22px;
 }
-
 
 
 

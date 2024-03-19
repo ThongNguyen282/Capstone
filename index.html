@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body id="myBody">
     <!-- ? Header -->
     <header id="site-header" class="main-header fixed-top">
         <div class="container w3HeaderLogoEd">
@@ -36,12 +36,12 @@
 
                 <button class="navbar-toggler collapsed bg-gradient" type="button" data-toggle="collapse"
                     data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false"
-                    aria-label="Toggle Navigation">
+                    aria-label="Toggle Navigation" style="background-color: #eee;">
                     <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                    <!-- <span class="navbar-toggler-icon fa icon-close fa-times"></span> -->
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbar-content">
+                <div class="collapse navbar-collapse text-center " id="navbar-content">
                     <ul id="primary-menu" class="navbar-nav ml-lg-auto">
                         <li id="menu-item-20"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-20 nav-item active">
@@ -71,55 +71,44 @@
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23 nav-item"><a
                                 href="https://wp.w3layouts.com/masterwork/contact-page/" class="nav-link">Contact</a>
                         </li>
-                    </ul>
 
-                    <!--/search-right-->
-                    <div class="search-right HeaderSearch mr-lg-3">
-                        <a href="#search" class="search-search" title="search"><span class="fa fa-search"
-                                aria-hidden="true"></span></a>
-                        <!-- search popup -->
-                        <!-- <div id="search" class="pop-overlay">
-                            <div class="popup">
+                        <!--! search  -->
+                        <li>
+                                <div class="search-btn" data-toggle="modal"
+                                    data-target="#exampleModal" data-whatever="@mdo">
+                                    <span>
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </span>
+                                </div>
 
-                                <form action="https://wp.w3layouts.com/masterwork/" method="GET"
-                                    class="search-box d-sm-flex">
-                                    <input type="search" placeholder="Enter Keyword" name="s" required="required"
-                                        autofocus="">
-                                    <button type="submit" class="btn">Search</button>
-                                </form>
-                                <a class="close" href="#close">×</a>
+                            <div class="modal fade" id="exampleModal" tabindex="0" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content mySearch">
+                                        <div class="modal-header">
+                                            <input type="search" placeholder="Search..." />
+                                            <button type="submit">Search</button>
+
+                                            <span aria-hidden="true" class="btn btn-secondary close"
+                                                data-dismiss="modal">&times;</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div> -->
-                        <!-- /search popup -->
+                        </li>
+                        <li>
+                            <div class="top-quote mr-lg-3 mt-lg-0 HeaderButton">
+                                <a class="btn btn-outline-primary theme-button" href="#demourl">
+                                    Schedule a Demo</a>
+                            </div>
+                            <!-- Buy button -->
+                        </li>
+                    </ul>
+                    <!--! light, dark theme  -->
+                    <div id="switchButton">
+                        <i class="fa-regular fa-moon"></i>
+                        <i class="fa-regular fa-sun"></i>
                     </div>
-                    <!--//search-right-->
-
-                    <!-- Buy button -->
-                    <div class="top-quote mr-lg-3 mt-lg-0 HeaderButton">
-                        <a class="btn btn-outline-primary theme-button" href="#demourl">
-                            Schedule a Demo</a>
-                    </div>
-                    <!-- Buy button -->
-
-
-
-                </div>
-
-
-                <!-- DARK MODE -->
-                <!-- <div class="mobile-position DarkandLight">
-					<nav class="navigation">
-						<div class="theme-switch-wrapper">
-							<label class="theme-switch" for="checkbox">
-								<input type="checkbox" id="checkbox">
-								<div class="mode-container">
-									<i class="gg-sun"></i>
-									<i class="gg-moon"></i>
-								</div>
-							</label>
-						</div>
-					</nav>
-				</div> -->
             </nav>
         </div>
         </div>
@@ -559,24 +548,6 @@
         </div>
     </section>
 
-
-    <!-- ? index6-->
-    <section class="index6 py-5">
-        <div class="container py-md-3 text-center HomePageCTA">
-            <div class="header-section text-center mx-auto">
-                <h3>Ready to build your own brand community? </h3>
-                <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                    Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
-            </div>
-            <div class="buttons mt-5">
-                <a href="#url" class="btn btn-outline-primary mr-2 theme-button">
-                    Book a Demo</a>
-                <a href="#url" class="btn btn-primary theme-button ml-2">
-                    Get Started</a>
-            </div>
-        </div>
-    </section>
-
     <!-- ? testimonials -->
     <section class="testnimonials_c" id="testnimoials">
         <div class="testimonials py-5">
@@ -696,6 +667,24 @@
             </div>
         </div>
     </section>
+
+    <!-- ? index6-->
+    <section class="index6 py-5">
+        <div class="container py-md-3 text-center HomePageCTA">
+            <div class="header-section text-center mx-auto">
+                <h3>Ready to build your own brand community? </h3>
+                <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+            </div>
+            <div class="buttons mt-5">
+                <a href="#url" class="btn btn-outline-primary mr-2 theme-button">
+                    Book a Demo</a>
+                <a href="#url" class="btn btn-primary theme-button ml-2">
+                    Get Started</a>
+            </div>
+        </div>
+    </section>
+
 
     <!-- ?FOOTER -->
     <footer>
@@ -906,10 +895,14 @@
         });
     </script>
 
-
     <!-- js back to top -->
     <script src="./js/main.js"></script>
     <script src="./js/util.js"></script>
+
+    <script src="./js/light-dark.js"></script>
 </body>
 
 </html>
+
+
+
